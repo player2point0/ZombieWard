@@ -12,7 +12,6 @@ public class DartGunController : MonoBehaviour
     {
         GunParticleSystem = GetComponentInChildren<ParticleSystem>();
     }
-
     
     private void Update()
     {

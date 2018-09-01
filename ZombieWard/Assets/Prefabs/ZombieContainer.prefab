@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 212891954753935900}
   - component: {fileID: 50460991005109216}
   - component: {fileID: 114998802106660574}
-  - component: {fileID: 114293277712548042}
+  - component: {fileID: 114259542608471652}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Zombie
@@ -210,7 +210,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &114293277712548042
+--- !u!114 &114259542608471652
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -218,15 +218,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1193140371191340}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30a386bd96539f04680450805ed0b029, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d505fd4e644e3848a99f9be3fa65a0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   HealthAmount: 50
-  IsZombie: 1
   UIText: {fileID: 114441129510823140}
   UISlider: {fileID: 114861336150430566}
   names:
   - bob
+  IsZombie: 1
 --- !u!114 &114441129510823140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -423,7 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Health: 10
-  Speed: 0.01
+  Speed: 0.025
   SpeedMultiplier: 1
   SpeedIncrement: 0.05
 --- !u!212 &212891954753935900

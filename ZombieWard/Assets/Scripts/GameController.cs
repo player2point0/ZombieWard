@@ -7,14 +7,17 @@ public class GameController : MonoBehaviour
     public GameObject Zombie;
     public float SpawnRadius;
     public float SpawnDelay;
+    public int MaxZombieNum;
 
     private List<ZombieController> Zombies;
     private List<GameObject> People;
+    private int SpawnCount;
 
 	void Start ()
     {
         Zombies = new List<ZombieController>();
         People = new List<GameObject>();
+        SpawnCount = 0;
         People.Add(GameObject.FindGameObjectWithTag("Player"));
         InvokeRepeating("SpawnZombie", 0, SpawnDelay);
         StartCoroutine("SetZombiesTarget");
@@ -56,6 +59,14 @@ public class GameController : MonoBehaviour
 
     void SpawnZombie()
     {
+        if(SpawnCount > MaxZombieNum)
+        {
+            CancelInvoke("SpawnZombie");
+            return;
+        }
+
+        SpawnCount++;
+
         int angle = Random.Range(0, 360);
         float x = SpawnRadius * Mathf.Sin(angle);
         float y = SpawnRadius * Mathf.Cos(angle);
