@@ -61,7 +61,7 @@ public class ZombieHealth : Health
                 gc.AddZombie(Zombie);
                 IsZombie = true;
                 HealthAmount = 50;
-                UIText.text = "Zombie" + UIText.text;
+                UIText.text = "Zombie " + UIText.text;
             }
 
             else gc.RemovePerson(Zombie);//kill person

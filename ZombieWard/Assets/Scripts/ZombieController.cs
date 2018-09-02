@@ -44,20 +44,7 @@ public class ZombieController : MonoBehaviour
 
     public void ChangeToPerson()
     {
-        float coinFlip = Random.value;
-
-        if(coinFlip > 0.5f)
-        {
-            target = transform.position;
-            return;
-        }
-
-        //set random target
-        int angle = Random.Range(0, 360);
-        float x = 1000 * Mathf.Sin(angle);
-        float y = 1000 * Mathf.Cos(angle);
-
-        SetTarget(new Vector3(x, y, 0));
+        SetTarget(transform.position);
     }
     public void changeToZombie()
     {

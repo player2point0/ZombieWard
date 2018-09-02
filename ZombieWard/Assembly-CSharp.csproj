@@ -61,17 +61,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CharacterController.cs" />
-    <Compile Include="Assets\Scripts\DartGunController.cs" />
-    <Compile Include="Assets\Scripts\ExplosiveHazardController.cs" />
-    <Compile Include="Assets\Scripts\FireHazardController.cs" />
-    <Compile Include="Assets\Scripts\Follow.cs" />
-    <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\Game\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Game\Follow.cs" />
+    <Compile Include="Assets\Scripts\Game\GameController.cs" />
+    <Compile Include="Assets\Scripts\Game\MusicPlayer.cs" />
+    <Compile Include="Assets\Scripts\Game\SceneController.cs" />
+    <Compile Include="Assets\Scripts\Game\SlideShowController.cs" />
+    <Compile Include="Assets\Scripts\Hazards\ExplosiveHazardController.cs" />
+    <Compile Include="Assets\Scripts\Hazards\FireHazardController.cs" />
     <Compile Include="Assets\Scripts\Health\Health.cs" />
     <Compile Include="Assets\Scripts\Health\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Health\ZombieHealth.cs" />
-    <Compile Include="Assets\Scripts\PlayerMoveController.cs" />
+    <Compile Include="Assets\Scripts\Player\DartGunController.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerMoveController.cs" />
+    <Compile Include="Assets\Scripts\WoodWallController.cs" />
     <Compile Include="Assets\Scripts\ZombieController.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/User/Desktop/UnityGames/ZombieWard/ZombieWard/ZombieWard/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
